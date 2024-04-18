@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <app-navigation (mandaDatiEvento)="onRiceviDati($event)"></app-navigation>
+  <div *ngIf ="bottone; then bloccoInizio; else elseblock1"></div>
+  <ng-template #bloccoInizio>
+      <app-introduction></app-introduction>
+  </ng-template>
+  <ng-template #elseblock1 >
+  <app-list></app-list>
+  </ng-template>
+  
+  </div>
